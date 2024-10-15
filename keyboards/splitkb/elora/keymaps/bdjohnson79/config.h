@@ -3,6 +3,9 @@
 
 #pragma once
 
+#define SPLIT_USB_DETECT
+#define SPLIT_WATCHDOG_ENABLE
+
 // Myriad boilerplate
 #define MYRIAD_ENABLE
 

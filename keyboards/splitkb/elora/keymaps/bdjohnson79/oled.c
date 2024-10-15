@@ -1,5 +1,6 @@
-#include "layers.h"
+
 #include "oled.h"
+#include "layers.h"
 
 void render_layers(uint8_t start_row) {
     oled_set_cursor(0, start_row);
@@ -8,24 +9,24 @@ void render_layers(uint8_t start_row) {
         case _QWERTY:
             oled_write_raw_P(base, sizeof(base));
             break;
-        case _NUM:
+        case _NUMPAD:
             oled_write_raw_P(num, sizeof(num));
             break;
         case _SYM:
             oled_write_raw_P(sym, sizeof(sym));
             break;
-        case _NAV:
+        case _MEDIA:
             oled_write_raw_P(nav, sizeof(nav));
             break;
         case _ADJUST:
             oled_write_raw_P(adjst, sizeof(adjst));
             break;
-        case _GSHFT:
+        case _FUNCTION:
             oled_write_raw_P(gshft, sizeof(gshft));
             break;
-        case _MOUSE:
+        /*case _MOUSE:
             oled_write_raw_P(mouse, sizeof(mouse));
-            break;
+            break;*/
         default:
             oled_write_P(PSTR("Undefined "), false);
     }
