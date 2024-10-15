@@ -1,6 +1,10 @@
 <!---
 
+<<<<<<< HEAD
     If you are submitting a Vial-enabled keymap for a keyboard in QMK:
+=======
+<!--- Anything on lines wrapped in comments like these will not show up in the final text. -->
+>>>>>>> c95f0fb6710e5def9523d19496c93a10d278d78a
 
     - Keymaps will not be accepted with VIAL_INSECURE=yes.
     - Avoid changing keyboard-level code if possible. (ex: switching the encoder pins in info.json)
@@ -12,7 +16,18 @@
     - If you are also submitting this keyboard to QMK, please try to submit mostly the same code to both repos if possible.
     - If you are not submitting this keyboard to QMK, only include "default" and "vial" keymaps. VIA firmware can no longer be built by this repository.
 
+<<<<<<< HEAD
     ------
+=======
+<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply. -->
+- [ ] Core
+- [ ] Bugfix
+- [ ] New feature
+- [ ] Enhancement/optimization
+- [ ] Keyboard (addition or update)
+- [ ] Keymap/layout (addition or update)
+- [ ] Documentation
+>>>>>>> c95f0fb6710e5def9523d19496c93a10d278d78a
 
     For all keyboard and keymap submissions:
 
