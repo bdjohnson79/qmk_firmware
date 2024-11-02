@@ -24,8 +24,8 @@ void render_layers(uint8_t start_row) {
         case _FUNCTION:
             oled_write_raw_P(gshft, sizeof(gshft));
             break;
-        /*case _MOUSE:
-            oled_write_raw_P(mouse, sizeof(mouse));
+        case _COLEMAK_DH:
+            oled_write_raw_P(colmk, sizeof(colmk));
             break;*/
         default:
             oled_write_P(PSTR("Undefined "), false);
